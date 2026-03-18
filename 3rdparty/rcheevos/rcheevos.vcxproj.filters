@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="rcheevos\src\rc_client.c" />
+    <ClCompile Include="rcheevos\src\rc_client_external.c" />
+    <ClCompile Include="rcheevos\src\rc_client_raintegration.c" />
+    <ClCompile Include="rcheevos\src\rc_compat.c" />
+    <ClCompile Include="rcheevos\src\rc_util.c" />
+    <ClCompile Include="rcheevos\src\rc_version.c" />
+    <ClCompile Include="rcheevos\src\rcheevos\alloc.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\condition.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\condset.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\consoleinfo.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\format.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\lboard.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\memref.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\operand.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\rc_validate.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\richpresence.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\runtime.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\runtime_progress.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\trigger.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rcheevos\value.c">
+      <Filter>rcheevos</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rhash\aes.c">
+      <Filter>rhash</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rhash\cdreader.c">
+      <Filter>rhash</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rhash\hash.c">
+      <Filter>rhash</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rhash\hash_disc.c">
+      <Filter>rhash</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rhash\hash_encrypted.c">
+      <Filter>rhash</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rhash\hash_rom.c">
+      <Filter>rhash</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rhash\hash_zip.c">
+      <Filter>rhash</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rhash\md5.c">
+      <Filter>rhash</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rapi\rc_api_common.c">
+      <Filter>rapi</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rapi\rc_api_editor.c">
+      <Filter>rapi</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rapi\rc_api_info.c">
+      <Filter>rapi</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rapi\rc_api_runtime.c">
+      <Filter>rapi</Filter>
+    </ClCompile>
+    <ClCompile Include="rcheevos\src\rapi\rc_api_user.c">
+      <Filter>rapi</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rcheevos\src\rc_client_external.h" />
+    <ClInclude Include="rcheevos\src\rc_client_external_versions.h" />
+    <ClInclude Include="rcheevos\src\rc_client_internal.h" />
+    <ClInclude Include="rcheevos\src\rc_client_raintegration_internal.h" />
+    <ClInclude Include="rcheevos\src\rc_compat.h" />
+    <ClInclude Include="rcheevos\src\rc_version.h" />
+    <ClInclude Include="rcheevos\include\rc_api_editor.h" />
+    <ClInclude Include="rcheevos\include\rc_api_info.h" />
+    <ClInclude Include="rcheevos\include\rc_api_request.h" />
+    <ClInclude Include="rcheevos\include\rc_api_runtime.h" />
+    <ClInclude Include="rcheevos\include\rc_api_user.h" />
+    <ClInclude Include="rcheevos\include\rc_client.h" />
+    <ClInclude Include="rcheevos\include\rc_client_raintegration.h" />
+    <ClInclude Include="rcheevos\include\rc_consoles.h" />
+    <ClInclude Include="rcheevos\include\rc_error.h" />
+    <ClInclude Include="rcheevos\include\rc_export.h" />
+    <ClInclude Include="rcheevos\include\rc_hash.h" />
+    <ClInclude Include="rcheevos\include\rc_runtime.h" />
+    <ClInclude Include="rcheevos\include\rc_runtime_types.h" />
+    <ClInclude Include="rcheevos\include\rc_util.h" />
+    <ClInclude Include="rcheevos\include\rcheevos.h" />
+    <ClInclude Include="rcheevos\src\rcheevos\rc_internal.h">
+      <Filter>rcheevos</Filter>
+    </ClInclude>
+    <ClInclude Include="rcheevos\src\rcheevos\rc_validate.h">
+      <Filter>rcheevos</Filter>
+    </ClInclude>
+    <ClInclude Include="rcheevos\src\rhash\aes.h">
+      <Filter>rhash</Filter>
+    </ClInclude>
+    <ClInclude Include="rcheevos\src\rhash\md5.h">
+      <Filter>rhash</Filter>
+    </ClInclude>
+    <ClInclude Include="rcheevos\src\rhash\rc_hash_internal.h">
+      <Filter>rhash</Filter>
+    </ClInclude>
+    <ClInclude Include="rcheevos\src\rapi\rc_api_common.h">
+      <Filter>rapi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="rapi">
+      <UniqueIdentifier>{3face1ff-c1d4-481e-9518-aa718f4d4ab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rhash">
+      <UniqueIdentifier>{67c094e4-82e4-4bb4-b413-8add875c59c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rcheevos">
+      <UniqueIdentifier>{cb43bee0-52fd-40da-9746-5da04ecdbd5f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="rcheevos\src\rcheevos\rc_runtime_types.natvis">
+      <Filter>rcheevos</Filter>
+    </Natvis>
+  </ItemGroup>
+</Project>

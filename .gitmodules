@@ -112,3 +112,8 @@
 	path = 3rdparty/protobuf/protobuf
 	url = ../../protocolbuffers/protobuf.git
 	ignore = dirty
+[submodule "3rdparty/rcheevos/rcheevos"]
+	path = 3rdparty/rcheevos/rcheevos
+	url = git@github.com:RetroAchievements/rcheevos.git
+	branch = master
+	ignore = dirty
