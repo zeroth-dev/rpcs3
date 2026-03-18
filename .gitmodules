@@ -117,3 +117,7 @@
 	url = git@github.com:RetroAchievements/rcheevos.git
 	branch = master
 	ignore = dirty
+[submodule "3rdparty/RAInterface/RAInterface"]
+	path = 3rdparty/RAInterface/RAInterface
+	url = git@github.com:RetroAchievements/RAInterface.git
+	ignore = dirty

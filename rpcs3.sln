@@ -119,6 +119,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rpcs3_test", "rpcs3\tests\r
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rcheevos", "3rdparty\rcheevos\rcheevos.vcxproj", "{F0C75E09-31C3-4AB3-995E-7D45B05CDE97}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RAInterface", "3rdparty\RAInterface\RAInterface.vcxproj", "{F22B0C21-B8FE-44D9-BA72-FE826B6D3B74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -245,6 +247,10 @@ Global
 		{F0C75E09-31C3-4AB3-995E-7D45B05CDE97}.Debug|x64.Build.0 = Debug|x64
 		{F0C75E09-31C3-4AB3-995E-7D45B05CDE97}.Release|x64.ActiveCfg = Release|x64
 		{F0C75E09-31C3-4AB3-995E-7D45B05CDE97}.Release|x64.Build.0 = Release|x64
+		{F22B0C21-B8FE-44D9-BA72-FE826B6D3B74}.Debug|x64.ActiveCfg = Debug|x64
+		{F22B0C21-B8FE-44D9-BA72-FE826B6D3B74}.Debug|x64.Build.0 = Debug|x64
+		{F22B0C21-B8FE-44D9-BA72-FE826B6D3B74}.Release|x64.ActiveCfg = Release|x64
+		{F22B0C21-B8FE-44D9-BA72-FE826B6D3B74}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -281,6 +287,7 @@ Global
 		{3C67A2FF-4710-402A-BE3E-31B0CB0576DF} = {6C3B64A0-8F8A-4DC4-8C0B-D71EBEED7FA8}
 		{D1CBF84E-07F8-4ACB-9CD2-BD205FDEEE1E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{F0C75E09-31C3-4AB3-995E-7D45B05CDE97} = {6C3B64A0-8F8A-4DC4-8C0B-D71EBEED7FA8}
+		{F22B0C21-B8FE-44D9-BA72-FE826B6D3B74} = {6C3B64A0-8F8A-4DC4-8C0B-D71EBEED7FA8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06CC7920-E085-4B81-9582-8DE8AAD42510}
