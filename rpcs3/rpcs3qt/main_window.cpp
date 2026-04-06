@@ -92,6 +92,7 @@
 
 #include <QEventLoop>
 #include <QTimer>
+#include "achievements.h"
 
 #ifdef _WIN32
 #include "raw_mouse_settings_dialog.h"
@@ -2516,6 +2517,8 @@ void main_window::CreateActions()
 	m_list_mode_act_group = new QActionGroup(this);
 	m_list_mode_act_group->addAction(ui->setListModeAct);
 	m_list_mode_act_group->addAction(ui->setGridModeAct);
+
+	ui->actionManage_RAIntegration->setDisabled(true);
 }
 
 void main_window::CreateConnects()
@@ -3484,6 +3487,43 @@ void main_window::CreateConnects()
 	connect(ui->toolbar_rpcn, &QAction::triggered, this, open_rpcn_settings);
 	connect(ui->toolbar_list, &QAction::triggered, this, [this]() { ui->setListModeAct->trigger(); });
 	connect(ui->toolbar_grid, &QAction::triggered, this, [this]() { ui->setGridModeAct->trigger(); });
+	connect(ui->toolbar_cheevos, &QAction::triggered, this, [this]()
+	{
+		Achievements::InitializeRAIntegration((HWND)this->winId());
+		if (Achievements::RAIntegrationInitialized())
+		{
+			QMenu* raMenu = new QMenu(QStringLiteral("RAIntegration"), ui->menuManage);
+			connect(raMenu, &QMenu::aboutToShow, this, [this, raMenu]()
+				{
+					raMenu->clear();
+
+					const auto items = Achievements::GetMenuItems();
+					for (const auto& [id, title, checked] : items)
+					{
+						if (id == 0)
+						{
+							raMenu->addSeparator();
+							continue;
+						}
+
+						QAction* raAction = raMenu->addAction(QString::fromUtf8(title));
+						if (checked)
+						{
+							raAction->setCheckable(true);
+							raAction->setChecked(checked);
+						}
+
+						connect(raAction, &QAction::triggered, this,
+							[id = id]()
+							{
+								Achievements::ActivateMenuItem(id);
+							});
+					}
+				});
+			ui->menuManage->insertSeparator(ui->actionManage_Screenshots);
+			ui->menuManage->insertMenu(ui->actionManage_Screenshots, raMenu);
+		}
+	});
 
 	connect(ui->sizeSlider, &QSlider::valueChanged, this, &main_window::ResizeIcons);
 	connect(ui->sizeSlider, &QSlider::sliderReleased, this, [this]

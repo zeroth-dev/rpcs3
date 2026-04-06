@@ -140,7 +140,7 @@
      <x>0</x>
      <y>0</y>
      <width>1058</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="contextMenuPolicy">
@@ -501,6 +501,7 @@
    <addaction name="toolbar_rpcn"/>
    <addaction name="toolbar_list"/>
    <addaction name="toolbar_grid"/>
+   <addaction name="toolbar_cheevos"/>
   </widget>
   <action name="bootElfAct">
    <property name="text">
@@ -1524,6 +1525,22 @@
   <action name="bootIsoAct">
    <property name="text">
     <string>Boot ISO</string>
+   </property>
+  </action>
+  <action name="toolbar_cheevos">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::MediaEject"/>
+   </property>
+   <property name="text">
+    <string>Cheevos</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionManage_RAIntegration">
+   <property name="text">
+    <string>RAIntegration</string>
    </property>
   </action>
   <action name="playHoverMusicAct">
